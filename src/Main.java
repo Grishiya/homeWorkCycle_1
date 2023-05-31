@@ -9,6 +9,7 @@ public class Main {
         task7();
         task8();
         task9();
+        task10();
     }
 
     public static void task1() {
@@ -73,12 +74,19 @@ public class Main {
         System.out.println("Задача 9.");
         int money = 29000;
         int month = 1;
-        int moneySavedUpForMonth = 0;
+        double moneySavedUpForMonth = 0;
         for (; month <= 12; month++) {
             moneySavedUpForMonth = moneySavedUpForMonth + moneySavedUpForMonth / 100;
             moneySavedUpForMonth = moneySavedUpForMonth + money;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + moneySavedUpForMonth + " рублей.");
         }
     }
-}
 
+    public static void task10() {
+        System.out.println("Задача 10.");
+        for (int i = 1; i <= 10; i++) {
+            int multipe = i * 2;
+            System.out.println(multipe);
+        }
+    }
+}
