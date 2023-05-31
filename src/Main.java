@@ -3,7 +3,8 @@ public class Main {
         task1();
         task2();
         task3();
-task4();
+        task4();
+        task5();
     }
 
     public static void task1() {
@@ -26,9 +27,17 @@ task4();
             }
         }
     }
-    public static void task4(){
+
+    public static void task4() {
         System.out.println("Задача 4");
-        for (int i=10;i>=(-10);i--)
+        for (int i = 10; i >= (-10); i--)
             System.out.println(i);
+    }
+
+    public static void task5() {
+        int startYear = 1904;
+        int finishYear = 2096;
+        for (; startYear <= finishYear; startYear = startYear + 4)
+            System.out.println(startYear + " год является високосным");
     }
 }
