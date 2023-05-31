@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -29,15 +30,22 @@ public class Main {
     }
 
     public static void task4() {
-        System.out.println("Задача 4");
+        System.out.println("Задача 4.");
         for (int i = 10; i >= (-10); i--)
             System.out.println(i);
     }
 
     public static void task5() {
+        System.out.println("Задача 5.");
         int startYear = 1904;
         int finishYear = 2096;
         for (; startYear <= finishYear; startYear = startYear + 4)
             System.out.println(startYear + " год является високосным");
     }
+    public static void task6(){
+        System.out.println("Задача 6.");
+    for (int i=0;i<100;i=i+7)
+        System.out.println(i);
+    }
 }
+
