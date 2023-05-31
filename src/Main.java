@@ -85,8 +85,8 @@ public class Main {
     public static void task10() {
         System.out.println("Задача 10.");
         for (int i = 1; i <= 10; i++) {
-            int multipe = i * 2;
-            System.out.println(multipe);
+            int multiplication = i * 2;
+            System.out.println( i+"*2="+ multiplication);
         }
     }
 }
