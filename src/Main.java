@@ -8,6 +8,7 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
     }
 
     public static void task1() {
@@ -44,23 +45,39 @@ public class Main {
         for (; startYear <= finishYear; startYear = startYear + 4)
             System.out.println(startYear + " год является високосным");
     }
-    public static void task6(){
+
+    public static void task6() {
         System.out.println("Задача 6.");
-    for (int i=0;i<100;i=i+7)
-        System.out.println(i);
-    }
-    public static void task7(){
-        System.out.println("Задача 7.");
-        for (int i=1;i<=512;i=i+i)
+        for (int i = 0; i < 100; i = i + 7)
             System.out.println(i);
     }
+
+    public static void task7() {
+        System.out.println("Задача 7.");
+        for (int i = 1; i <= 512; i = i + i)
+            System.out.println(i);
+    }
+
     public static void task8() {
+        System.out.println("Задача 8.");
         int money = 29000;
-        int i = 1;
-        int moneySavedUpForYear = 0;
-        for (; i <= 12; i++) {
-            moneySavedUpForYear = moneySavedUpForYear + money;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + moneySavedUpForYear + " рублей.");
+        int month = 1;
+        int moneySavedUpForMonth = 0;
+        for (; month <= 12; month++) {
+            moneySavedUpForMonth = moneySavedUpForMonth + money;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + moneySavedUpForMonth + " рублей.");
+        }
+    }
+
+    public static void task9() {
+        System.out.println("Задача 9.");
+        int money = 29000;
+        int month = 1;
+        int moneySavedUpForMonth = 0;
+        for (; month <= 12; month++) {
+            moneySavedUpForMonth = moneySavedUpForMonth + moneySavedUpForMonth / 100;
+            moneySavedUpForMonth = moneySavedUpForMonth + money;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + moneySavedUpForMonth + " рублей.");
         }
     }
 }
